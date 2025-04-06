@@ -10,11 +10,10 @@
     --secondary-color: #4CA6CD;
     --home-height: 25rem;
     --transition: 0.3s;
-    /* if I need more variables I will be declaring them */
 }
 
 
-/* Overrides */
+/* #region Overrides */
 * {
     margin: 0;
     padding: 0;
@@ -30,19 +29,6 @@ a {
     color: var(--primary-color);
     font-family: var(--font);
 }
-
-.bio-text {
-    text-decoration: none;
-    color: var(--bg-color);
-    font-family: var(--font);
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-size: larger;
-}
-  
-a:hover {
-    color: var(--secondary-color);
-}
   
 body {
     background-color: var(--bg-color);
@@ -51,12 +37,6 @@ body {
 h1 {
     font-family: var(--title);
     color: var(--primary-color);
-}
-
-.bio-title {
-    color: var(--bg-color);
-    font-family: var(--font);
-    padding: 1.5rem;
 }
 
 nav{
@@ -82,7 +62,36 @@ nav ul{
     gap: 2.5rem;
 }
 
-img {
+object{
+    width: 100%;
+    height: 550px;
+    overflow: auto;
+}
+/*#endregion*/
+
+/* #region body */
+.bio-text {
+    text-decoration: none;
+    color: var(--bg-color);
+    font-family: var(--font);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: larger;
+}
+
+.burger-menu {
+    display: none;
+}
+  
+a:hover {
+    color: var(--secondary-color);
+}
+.bio-title {
+    color: var(--bg-color);
+    font-family: var(--font);
+    padding: 1.5rem;
+}
+.home-img {
     height: var(--home-height);
     margin: 1rem;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -151,11 +160,6 @@ img {
     padding: 1.5rem;
 }
 
-object{
-    width: 100%;
-    height: 550px;
-    overflow: auto;
-}
 
 .body-text{
     text-decoration: none;
@@ -167,6 +171,7 @@ object{
     background-color: var(--secondary-color);
     width: fit-content;
     justify-items: center;
+    align-items: center;
     padding: 1.5rem;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -195,3 +200,51 @@ object{
     color: var(--primary-color);
     text-align: center;
 }
+/* #endregion */
+
+/* #region small screens */
+@media screen and (max-width: 720px) {
+    nav{
+        padding: 1.5rem 1rem;
+    }
+        
+    nav h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    nav ul{
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        text-align: center;
+        top: 75px;
+        left: 10%;
+        width: 80%;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    .burger-menu {
+        display: block;
+        color: var(--secondary-color);
+        font-size: 2.5rem;
+        border: 0;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    nav ul.show {
+        transform: translateX(20%);
+    }
+
+    .home {
+        flex-direction: column;
+    }
+    
+}
+/* #endregion */
