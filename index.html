@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Sanaa Blankenbaker | Fullstack Dev</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Assets/icons/favicon-32x32.png"
+    />
+  </head>
+
+  <body>
+    <nav>
+        <h1>SANAA BLANKENBAKER</h1>
+        <ul class="navigation">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#work" class="nav-link">Work</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+     <section class="home" id="about">
+        <img
+        src="Assets\imgs\20250227_135905.jpg"
+        alt="Sanaa Blankenbaker"
+        loading="lazy"
+        class="hero-img" />
+
+        <div class="bio">
+            <h2 class="bio-title">About Me:</h2>
+            <p class="bio-text">
+                Throughout my tenure as a software developer, I've predominantly focused on web and application development leveraging the React framework. Throughout the duration of my NSIN internship, I adeptly tackled bugs, spearheaded UI/UX enhancements, coded API endpoints, and independently facilitated the deployment of new APKs for our app's release on the Google Play Store. <br>
+                Beyond my professional endeavors, my tenure at UCF has seen me engage in diverse projects, with a standout being the development of a 2.5D game using WebGL technology. These experiences have honed my collaboration and communication prowess, fortified my proficiency in various industry-standard programming, scripting languages, and tools, as well as underscoring my work ethic and autonomy.
+            </p>
+        </div>
+     </section>
+
+    <!-- Work section -->
+     <section class="work" id="work">
+        <div class="content-work">
+            <h2 class="content-title">My Work:</h2>
+        </div>
+     </section>
+
+    <!-- Resume section -->     
+    <section class="resume" id="resume">
+      <div class="content-resume">
+          <h2 class="content-title">My Resume:</h2><br>
+          <object data="./Assets/Resume_Sanaa_Blankenbaker.pdf" type="application/pdf">
+              <p class="bio-text">Unable to display PDF. <a class="bio-text" href="./Assets/Resume_Sanaa_Blankenbaker.pdf">Download</a> instead.</p>
+          </object>
+      </div>
+   </section>
+
+    <!-- Contact section -->
+     <section class="contact" id="contact">
+        <div class="content-contact">
+            <h2 class="contact-title">Contact Me:</h2>
+            <body>
+              <div class="container">
+                <form action="https://formspree.io/f/xjkyaaay" method="POST">
+                  <h3 class="content-title">Subject:</h3> <br>
+                  <input class="input-field" type="text" id="subject" name="subject" placeholder="Subject" required><br>
+                  <h3 class="content-title">Email:</h3><br>
+                  <input class="input-field" type="email" id="email" name="email" placeholder="Your Email" required><br>
+                  <h3 class="content-title">Message:</h3><br>
+                  <textarea class="input-field" id="body" name="message" rows="10" cols="50" placeholder="Your Message" required></textarea><br>   
+              </div>
+                  <input type="submit" id="submit-button" value="Submit">
+                </form>
+            </body>
+        </div>
+     </section>
+
+
+    <!-- Scroll to top -->
+
+    <!-- Footer section -->
+     <footer>
+      <p class="copy">&copy; Copyright 2025</p>
+      <p class="copy">
+        Built by Sanaa Blankenbaker</a
+        >
+      </p>
+</footer>
+
+    <!-- Scripts -->
+    <!-- <script src="Assets/ts/app.ts"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
