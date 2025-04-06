@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=News+Cycle:wght@400;700&display=swap");
+
+:root {
+    --title: "Montserrat Underline", sans-serif;
+    --font: "News Cycle", sans-serif;
+    --font-normal: 400px;
+    --font-bold: 700px;
+    --bg-color: #1B1818;
+    --primary-color: #D9D9D9;
+    --secondary-color: #4CA6CD;
+    --home-height: 25rem;
+    --transition: 0.3s;
+    /* if I need more variables I will be declaring them */
+}
+
+
+/* Overrides */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--font);
+}
+
+.bio-text {
+    text-decoration: none;
+    color: var(--bg-color);
+    font-family: var(--font);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: larger;
+}
+  
+a:hover {
+    color: var(--secondary-color);
+}
+  
+body {
+    background-color: var(--bg-color);
+}
+
+h1 {
+    font-family: var(--title);
+    color: var(--primary-color);
+}
+
+.bio-title {
+    color: var(--bg-color);
+    font-family: var(--font);
+    padding: 1.5rem;
+}
+
+nav{
+    position: static;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    overflow-x: auto;
+}
+
+nav h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+nav ul{
+    display: flex;
+    gap: 2.5rem;
+}
+
+img {
+    height: var(--home-height);
+    margin: 1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 2rem;
+    margin: 3rem;
+    background-color: var(--secondary-color);
+}
+
+.bio{
+    background-color: var(--primary-color);
+    display: flex;
+    height: var(--home-height);
+    width: fit-content;
+    margin: 1rem;
+    overflow: auto;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.content-title{
+    font-family: var(--font);
+}
+
+.contact-title{
+    font-family: var(--font);
+    color: var(--primary-color);
+}
+
+.content-work {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    min-width: fit-content;
+    min-height: fit-content;
+    margin: 3rem;
+    padding: 1.5rem;
+}
+.content-contact {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    min-width: 30%;
+    min-height: fit-content;
+    margin: 3rem;
+    padding: 1.5rem;
+}
+
+.content-resume {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    min-width: fit-content;
+    min-height: fit-content;
+    margin: 3rem;
+    padding: 1.5rem;
+}
+
+object{
+    width: 100%;
+    height: 550px;
+    overflow: auto;
+}
+
+.body-text{
+    text-decoration: none;
+    color: var(--bg-color);
+    font-family: var(--font);
+}
+
+.container{
+    background-color: var(--secondary-color);
+    width: fit-content;
+    justify-items: center;
+    padding: 1.5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container .input-field{
+    font-size: medium;
+    line-height: normal;
+    width: fit-content;
+    padding: 10px;
+    background-color: var(--primary-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-field::placeholder{
+    padding: 1px;
+}
+
+.submit-button{
+    border: 2px solid var(--primary-color);
+    font-size: 1rem;
+    font-family: var(--font);
+    transition: var(--transition);
+}
+
+.copy{
+    color: var(--primary-color);
+    text-align: center;
+}
